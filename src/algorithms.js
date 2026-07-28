@@ -34,6 +34,8 @@ export function removeDuplicates(arr) {
 console.log(removeDuplicates([1, 2, 2, 3, 4, 5, 5]));
 */
 
+
+/*
 export function findLongestWord(str) {
     const word = str.split(' ');
     let longest = '';
@@ -47,3 +49,20 @@ export function findLongestWord(str) {
 }
 
 console.log(findLongestWord("The quick brown fox jumps over the lazy dog"));
+*/
+
+
+export function countVowels(str) {
+  const vowels = 'aeiou';
+  let count = 0;
+
+  for (const char of str.toLowerCase()) {
+    if (vowels.includes(char)) {
+      count++;
+    }
+  }
+
+  return count;
+}
+
+console.log(countVowels("hello world"));
