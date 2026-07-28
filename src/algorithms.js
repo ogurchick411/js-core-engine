@@ -1,3 +1,4 @@
+/*
 export function isPalindrome(str) {
     const cleanStr = str.toLowerCase();
 
@@ -8,3 +9,17 @@ export function isPalindrome(str) {
 console.log(isPalindrome("racecar"));
 
 console.log(isPalindrome("hello"));
+*/
+
+
+
+export function isAnagram(str1, str2) {
+    const formatString = (str) => 
+        str.toLowerCase().split('').sort().join('');
+
+    return formatString(str1) === formatString(str2);
+
+}
+
+console.log(isAnagram("finder", "friend"));
+console.log(isAnagram("hello", "buy"));
