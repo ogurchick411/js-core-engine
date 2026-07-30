@@ -96,7 +96,7 @@ export function reverseString(str) {
 console.log(reverseString("hello")); 
 */
 
-
+/*
 export function findMax(arr) {
     let max = [0];
 
@@ -106,4 +106,15 @@ export function findMax(arr) {
         }
     }
     return max;
+}
+*/
+
+
+export function reverseArray(arr) {
+    const reversed = [];
+    for (let i = arr.length - 1; i >= 0; i--) {
+        reversed.push(arr[i]);
+    }
+
+    return reversed;
 }
