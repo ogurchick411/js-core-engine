@@ -51,7 +51,7 @@ export function findLongestWord(str) {
 console.log(findLongestWord("The quick brown fox jumps over the lazy dog"));
 */
 
-
+/*
 export function countVowels(str) {
   const vowels = 'aeiou';
   let count = 0;
@@ -66,3 +66,23 @@ export function countVowels(str) {
 }
 
 console.log(countVowels("hello world"));
+*/
+
+
+export function fizzBuzz(n) {
+  const result = [];
+
+  for (let i = 1; i <= n; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      result.push("FizzBuzz");
+    } else if (i % 3 === 0) {
+      result.push("Fizz");
+    } else if (i % 5 === 0) {
+      result.push("Buzz");
+    } else {
+      result.push(i);
+    }
+  }
+
+  return result;  
+}
