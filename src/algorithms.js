@@ -109,7 +109,7 @@ export function findMax(arr) {
 }
 */
 
-
+/*
 export function reverseArray(arr) {
     const reversed = [];
     for (let i = arr.length - 1; i >= 0; i--) {
@@ -117,4 +117,18 @@ export function reverseArray(arr) {
     }
 
     return reversed;
+}
+*/
+
+
+export function countVowels(str) {
+    const vowels = "aeiouAEIOU";
+    let count = 0;
+
+    for (const char of str) {
+        if (vowels.includes(char)) {
+            count++;
+        }
+    }
+    return count;
 }
