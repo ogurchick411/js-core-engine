@@ -68,7 +68,7 @@ export function countVowels(str) {
 console.log(countVowels("hello world"));
 */
 
-
+/*
 export function fizzBuzz(n) {
   const result = [];
 
@@ -86,3 +86,10 @@ export function fizzBuzz(n) {
 
   return result;  
 }
+*/
+
+export function reverseString(str) {
+  return str.split('').reverse().join('');
+}
+
+console.log(reverseString("hello")); 
