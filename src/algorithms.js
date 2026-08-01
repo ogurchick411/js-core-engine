@@ -98,15 +98,19 @@ console.log(reverseString("hello"));
 
 /*
 export function findMax(arr) {
-    let max = [0];
+    if (arr.length === 0) return null; 
 
-    for (let i = 0; i <= arr.length; i++) {
+    let max = arr[0]; 
+
+    for (let i = 1; i < arr.length; i++) {
         if (arr[i] > max) {
             max = arr[i];
         }
     }
     return max;
 }
+
+console.log(findMax([3, 9, 2, 56, 11]));  
 */
 
 /*
@@ -120,7 +124,7 @@ export function reverseArray(arr) {
 }
 */
 
-
+/*
 export function countVowels(str) {
     const vowels = "aeiouAEIOU";
     let count = 0;
@@ -131,4 +135,38 @@ export function countVowels(str) {
         }
     }
     return count;
+  }
+  */
+
+/*
+  const grades = [3, 4, 5, 2, 5, 4, 3, 5];
+
+  const goodGrades = grades.filter(grade => grade === 5 );
+
+  const count = goodGrades.length;
+
+  console.log(goodGrades);
+  console.log(count);
+*/
+
+
+
+function isPalidromeSimple(str) {
+  const cleanStr = str.toLowerCase().replace(/[^a-z0-9а-яё]/g, '');
+
+  let left = 0;
+  let right = cleanStr.length - 1;
+
+  while (left < right) {
+    if (cleanStr[left] !== cleanStr[right]) {
+      return false;
+    }
+
+    left++;
+    right--;
+  }
+  return true;
 }
+
+console.log(isPalidromeSimple("ckookc"));
+console.log(isPalidromeSimple("hola"));
