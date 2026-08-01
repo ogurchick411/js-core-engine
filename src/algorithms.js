@@ -150,7 +150,7 @@ export function countVowels(str) {
 */
 
 
-
+/*
 function isPalidromeSimple(str) {
   const cleanStr = str.toLowerCase().replace(/[^a-z0-9а-яё]/g, '');
 
@@ -170,3 +170,17 @@ function isPalidromeSimple(str) {
 
 console.log(isPalidromeSimple("ckookc"));
 console.log(isPalidromeSimple("hola"));
+*/
+
+
+const products = [
+  { name: "Phone", price: 470},
+  { name : "Case", price: 30},
+  { name: "Headphones", price: 170},
+  { name: "Glass", price: 80}
+];
+
+const expensiveProducts = products.filter(item => items.price > 200);
+const expensiveNames = expensiveProducts.map(item => item.name);
+
+console.log("Expensive items:", expensiveNames);
