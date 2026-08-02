@@ -250,7 +250,7 @@ const originalArray = [1, 2, 3, 4, 5];
 console.log("Reversed array:", reverseArrayInPlace(originalArray));
 */
 
-
+/*
 function firstUniqChar(str) {
   const charCount = {};
 
@@ -271,3 +271,27 @@ function firstUniqChar(str) {
 
 console.log("first unique index:", firstUniqChar("leetcode"));
 console.log("first unique index:", firstUniqChar("loveleetcode"));
+*/
+
+
+function twoSum(nums, target) {
+  const previousValues = {};
+
+  for (let i = 0; i < nums.length; i++) {
+    const currentNumber = nums[i];
+    const neededValue = target - currentNumber;
+
+    if (neededValue in previousValues) {
+      return [previousValues[neededValue], i];
+    }
+
+    previousValues[currentNumber] = i;
+
+  }
+  return [];
+}
+
+const numbers = [2, 7, 11, 15];
+const targetSum = 13;
+
+console.log("found indices", twoSum(numbers, targetSum));
