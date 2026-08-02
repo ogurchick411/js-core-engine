@@ -187,6 +187,7 @@ console.log("Expensive items:", expensiveNames);
 */
 
 
+/*
 function getUniqueElements(arr) {
   for (let i = 0; i < arr.length; i++) {
     const currentItem = arr[i];
@@ -202,3 +203,26 @@ function getUniqueElements(arr) {
 
 const numbers = [1, 2, 2, 3, 4, 4, 5, 1];
 console.log(getUniqueElements(numbers));
+*/
+
+
+function findCommonElements(firstArray, secondArray) {
+  const intersectionArr = [];
+
+  for (let i = 0; i < firstArray.length; i++) {
+    const currentItem = firstArrayp[i];
+
+    if (secondArray.includes(currentItem) && !intersectionArr.includes(currentItem)) {
+      intersectionArr.push(currentItem);
+    } 
+  }
+
+  return intersectionArr;
+
+}
+
+const listA = [1, 2, 3, 4, 5];
+const listB = [3, 4, 5, 6, 7];
+
+console.log("common elements:", findCommonElements(listA, listB));
+
