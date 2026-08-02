@@ -298,7 +298,7 @@ console.log("found indices", twoSum(numbers, targetSum));
 */
 
 
-
+/*
 function findFirstDuplicate(nums) {
   const seenNumbers = {};
 
@@ -316,3 +316,29 @@ function findFirstDuplicate(nums) {
 
 const numbersList = [2, 1 ,3, 5, 3, 2];
 console.log("first duplicate:", findFirstDuplicate(numbersList));
+*/
+
+
+function hasPairWithDifference(nums, target) {
+  const seenNumbers = {};
+
+  for (let i = 0; i < nums.length; i++) {
+    const currentNumber = nums[i];
+
+    const neededFirst = currentNumber - target;
+    const neededSecond = currentNumber + target;
+
+    if (neededFirst in seenNumbers || neededSecond in seenNumbers) {
+      return true;
+    }
+
+    seenNumbers[currentNumber] = true;
+  }
+  return false;
+}
+
+const arrayData = [5, 2, 8, 3, 11];
+const targetDifference = 3;
+
+
+console.log("has pair with difference:", hasPairWithDifference(arrayData, targetDifference));
