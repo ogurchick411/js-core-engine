@@ -205,7 +205,7 @@ const numbers = [1, 2, 2, 3, 4, 4, 5, 1];
 console.log(getUniqueElements(numbers));
 */
 
-
+/*
 function findCommonElements(firstArray, secondArray) {
   const intersectionArr = [];
 
@@ -225,4 +225,24 @@ const listA = [1, 2, 3, 4, 5];
 const listB = [3, 4, 5, 6, 7];
 
 console.log("common elements:", findCommonElements(listA, listB));
+*/
 
+
+
+function reverseArrayInPlace(arr) {
+  let left = 0;
+  let right = arr.length - 1;
+
+  whie (left < right) {
+    const temp = arr[left];
+
+    arr[left] = arr[right];
+    arr[right] = temp;
+
+    left++;
+    right--;
+  }
+
+  const originalArray = [1, 2, 3, 4, 5];
+  console.log("reversed array:", reverseArrayInPlace(originalArray));
+}
