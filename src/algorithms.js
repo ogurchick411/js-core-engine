@@ -228,7 +228,7 @@ console.log("common elements:", findCommonElements(listA, listB));
 */
 
 
-
+/*
 function reverseArrayInPlace(arr) {
     let left = 0;
     let right = arr.length - 1;
@@ -248,3 +248,26 @@ function reverseArrayInPlace(arr) {
 
 const originalArray = [1, 2, 3, 4, 5];
 console.log("Reversed array:", reverseArrayInPlace(originalArray));
+*/
+
+
+function firstUniqChar(str) {
+  const charCount = {};
+
+  for (let i = 0; i < str.length; i++) {
+    const char = str[i];
+    charCount[char] = (charCount[char] || 0) + 1;
+  }
+  for (let i = 0; i < str.length; i++) {
+    const char = str[i];
+    if (charCount[char] === 1) {
+      return i;
+    }
+  }
+
+  return -1;
+
+}
+
+console.log("first unique index:", firstUniqChar("leetcode"));
+console.log("first unique index:", firstUniqChar("loveleetcode"));
