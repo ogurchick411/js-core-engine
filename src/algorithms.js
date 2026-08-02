@@ -172,7 +172,7 @@ console.log(isPalidromeSimple("ckookc"));
 console.log(isPalidromeSimple("hola"));
 */
 
-
+/*
 const products = [
   { name: "Phone", price: 470},
   { name : "Case", price: 30},
@@ -184,3 +184,21 @@ const expensiveProducts = products.filter(item => items.price > 200);
 const expensiveNames = expensiveProducts.map(item => item.name);
 
 console.log("Expensive items:", expensiveNames);
+*/
+
+
+function getUniqueElements(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    const currentItem = arr[i];
+
+    if (!uniqueArr.includes(currentItem)) {
+      uniqueArr.push(currentItem);
+    }
+  }
+
+  return uniqueArr;
+
+}
+
+const numbers = [1, 2, 2, 3, 4, 4, 5, 1];
+console.log(getUniqueElements(numbers));
