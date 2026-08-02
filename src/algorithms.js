@@ -273,7 +273,7 @@ console.log("first unique index:", firstUniqChar("leetcode"));
 console.log("first unique index:", firstUniqChar("loveleetcode"));
 */
 
-
+/*
 function twoSum(nums, target) {
   const previousValues = {};
 
@@ -295,3 +295,24 @@ const numbers = [2, 7, 11, 15];
 const targetSum = 13;
 
 console.log("found indices", twoSum(numbers, targetSum));
+*/
+
+
+
+function findFirstDuplicate(nums) {
+  const seenNumbers = {};
+
+  for (let i = 0; i < nums.length; i++) {
+    const currentNumber = nums[i];
+
+    if (currentNumber in seenNumbers) {
+      return currentNumber;
+    }
+
+    seenNumbers[currentNumber] = true;
+  }
+  return null;
+}
+
+const numbersList = [2, 1 ,3, 5, 3, 2];
+console.log("first duplicate:", findFirstDuplicate(numbersList));
