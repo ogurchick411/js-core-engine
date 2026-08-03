@@ -439,7 +439,7 @@ console.log("reversed word is:",reverseStr(word));
 */
 
 
-
+/*
 function isPalindrome(str) {
   let reversedStr = "";
 
@@ -457,5 +457,29 @@ const testWord2 = "hello";
 console.log("is 'racecar' a palindrome?", isPalindrome(testWord1));
 
 console.log("is 'hello' a palindrome?", isPalindrome(testWord2));
+*/
 
+
+function countVowels(str) {
+  let vowelCount = 0;
+  const vowels = "aeiou";
+
+  const lowerCaseStr = str.toLowerCase();
+
+  for (let i = 0; i < lowerCaseStr.length; i++){
+    const currentChar = lowerCaseStr[i];
+
+
+    if (vowels.includes(currentChar)) {
+      vowelCount++;
+
+    }
+  }
+
+  return vowelCount;
+}
+
+const testSentence = "Hello World";
+
+console.log("number of vowels:", countVowels(testSentence));
 
