@@ -397,7 +397,7 @@ const prices = [100, 200, 50, 27];
 console.log("total sum is:", calcSum(prices));
 */
 
-
+/*
 function calcAverage(nums) {
 
   if (nums.legth === 0) {
@@ -418,4 +418,21 @@ function calcAverage(nums) {
 const grages = [4, 5, 3, 5, 4];
 
 console.log("average value is:", calcAverage(grades));
+*/
 
+
+
+function reverseStr(str) {
+  let reversedStr = "";
+
+  for (let i = str.length - 1; i >= 0; i--) {
+    reversedStr += str[i];
+
+  }
+
+  return reversedStr;
+
+}
+
+const word = "hello";
+console.log("reversed word is:",reverseStr(word));
