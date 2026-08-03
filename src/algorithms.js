@@ -363,7 +363,7 @@ const scores = [12, 45, 6, 89, 21, 55];
 console.log("max number is:", findMaxNum(scores));
 */
 
-
+/*
 function findMinNum(nums) {
   let minNum = nums[0];
 
@@ -379,4 +379,19 @@ function findMinNum(nums) {
 
 const scores = [45, 12, 89, 6, 23, 55];
 console.log("min number is:", findMinNum(scores));
+*/
 
+
+function calcSum(nums) {
+  let totalSum = 0;
+
+  for (let i = 0; i < nums.length; i++) {
+    totalSum += nums[i];
+  }
+
+  return totalSum;
+}
+
+const prices = [100, 200, 50, 27];
+
+console.log("total sum is:", calcSum(prices));
