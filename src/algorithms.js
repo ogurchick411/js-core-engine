@@ -421,7 +421,7 @@ console.log("average value is:", calcAverage(grades));
 */
 
 
-
+/*
 function reverseStr(str) {
   let reversedStr = "";
 
@@ -436,3 +436,26 @@ function reverseStr(str) {
 
 const word = "hello";
 console.log("reversed word is:",reverseStr(word));
+*/
+
+
+
+function isPalindrome(str) {
+  let reversedStr = "";
+
+  for (let i = str.length - 1; i >= 0; i--){
+    reversedStr += str[i];
+  }
+
+  return str === reversedStr;
+
+}
+
+const testWord1 = "racecar";
+const testWord2 = "hello";
+
+console.log("is 'racecar' a palindrome?", isPalindrome(testWord1));
+
+console.log("is 'hello' a palindrome?", isPalindrome(testWord2));
+
+
