@@ -344,7 +344,7 @@ const targetDifference = 3;
 console.log("has pair with difference:", hasPairWithDifference(arrayData, targetDifference));
 */
 
-
+/*
 function findMaxNum(nums) {
   let maxNum = nums[0];
 
@@ -361,3 +361,22 @@ function findMaxNum(nums) {
 
 const scores = [12, 45, 6, 89, 21, 55];
 console.log("max number is:", findMaxNum(scores));
+*/
+
+
+function findMinNum(nums) {
+  let minNum = nums[0];
+
+  for (let i = 1; i < nums.length; i++){
+    
+    if (nums[i] < minNum) {
+      minNum = nums[i];
+    }
+  }
+
+  return minNum;
+}
+
+const scores = [45, 12, 89, 6, 23, 55];
+console.log("min number is:", findMinNum(scores));
+
