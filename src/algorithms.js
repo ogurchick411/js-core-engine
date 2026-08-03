@@ -318,7 +318,7 @@ const numbersList = [2, 1 ,3, 5, 3, 2];
 console.log("first duplicate:", findFirstDuplicate(numbersList));
 */
 
-
+/*
 function hasPairWithDifference(nums, target) {
   const seenNumbers = {};
 
@@ -342,3 +342,22 @@ const targetDifference = 3;
 
 
 console.log("has pair with difference:", hasPairWithDifference(arrayData, targetDifference));
+*/
+
+
+function findMaxNum(nums) {
+  let maxNum = nums[0];
+
+  for (let i = 1; i < nums.length; i++) {
+
+    if (nums[i] > maxNum) {
+      maxNum = nums[i];
+
+    }
+
+  }
+    return maxNum;
+}
+
+const scores = [12, 45, 6, 89, 21, 55];
+console.log("max number is:", findMaxNum(scores));
