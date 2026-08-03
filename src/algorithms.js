@@ -381,7 +381,7 @@ const scores = [45, 12, 89, 6, 23, 55];
 console.log("min number is:", findMinNum(scores));
 */
 
-
+/*
 function calcSum(nums) {
   let totalSum = 0;
 
@@ -395,3 +395,27 @@ function calcSum(nums) {
 const prices = [100, 200, 50, 27];
 
 console.log("total sum is:", calcSum(prices));
+*/
+
+
+function calcAverage(nums) {
+
+  if (nums.legth === 0) {
+    return 0;
+  }
+
+  let totalSum = 0;
+
+  for (let i = 0; i < nums.length; i++) {
+    totalSum += nums[i];
+  }
+
+  const average = totalSum / nums.length;
+  
+  return average;
+}
+
+const grages = [4, 5, 3, 5, 4];
+
+console.log("average value is:", calcAverage(grades));
+
