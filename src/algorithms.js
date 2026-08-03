@@ -459,7 +459,7 @@ console.log("is 'racecar' a palindrome?", isPalindrome(testWord1));
 console.log("is 'hello' a palindrome?", isPalindrome(testWord2));
 */
 
-
+/*
 function countVowels(str) {
   let vowelCount = 0;
   const vowels = "aeiou";
@@ -482,4 +482,21 @@ function countVowels(str) {
 const testSentence = "Hello World";
 
 console.log("number of vowels:", countVowels(testSentence));
+*/
 
+
+
+function calcFactorial(n) {
+  let result = 1;
+
+  for (let i = 1; i <= n; i++) {
+    result *= i;
+
+  }
+
+  return result;
+
+}
+
+const number = 5;
+console.log("factorial is:", calcFactorial(number));
