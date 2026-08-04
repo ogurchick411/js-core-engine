@@ -485,7 +485,7 @@ console.log("number of vowels:", countVowels(testSentence));
 */
 
 
-
+/*
 function calcFactorial(n) {
   let result = 1;
 
@@ -500,3 +500,15 @@ function calcFactorial(n) {
 
 const number = 5;
 console.log("factorial is:", calcFactorial(number));
+*/
+
+
+
+function calcDiscountPrice(price, discountPercent) {
+  const discountAmount = (price * discountPercent) / 100;
+  const finalPrice = price - discountAmount;
+  return finalPrice;
+}
+
+const myPhonePrice = calcDiscountPrice(500, 20);
+console.log(myPhonePrice);
