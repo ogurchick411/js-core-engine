@@ -503,7 +503,7 @@ console.log("factorial is:", calcFactorial(number));
 */
 
 
-
+/*
 function calcDiscountPrice(price, discountPercent) {
   const discountAmount = (price * discountPercent) / 100;
   const finalPrice = price - discountAmount;
@@ -512,3 +512,15 @@ function calcDiscountPrice(price, discountPercent) {
 
 const myPhonePrice = calcDiscountPrice(500, 20);
 console.log(myPhonePrice);
+*/
+
+
+function calculateAge(birthYear, currentYear) {
+  let calcYear = (currentYear - birthYear);
+  
+  const finalYear = (calcYear);
+
+  return finalYear;
+}
+
+console.log(calculateAge(2008, 2026));
