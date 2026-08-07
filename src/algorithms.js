@@ -538,6 +538,7 @@ console.log(checkEvenOrOdd(4));
 */
 
 
+/*
 function isEven(number) {
   return number % 2 === 0;
 }
@@ -554,3 +555,25 @@ function checkNumberMessage(number) {
 
 console.log(checkNumberMessage(4));
 console.log(checkNumberMessage(7));
+*/
+
+
+
+
+  const myProduct = {
+  title: "Mouse",
+  price: "150",
+  inStock: true
+  }
+
+function checkProductStatus(item) {
+
+  if (item.inStock) {
+    return item;
+  } else {
+    return "SoldOut";
+  }
+
+};
+
+console.log(checkProductStatus(myProduct).title);
