@@ -514,7 +514,7 @@ const myPhonePrice = calcDiscountPrice(500, 20);
 console.log(myPhonePrice);
 */
 
-
+/*
 function calculateAge(birthYear, currentYear) {
   let calcYear = (currentYear - birthYear);
   
@@ -524,3 +524,14 @@ function calculateAge(birthYear, currentYear) {
 }
 
 console.log(calculateAge(2008, 2026));
+*/
+
+
+function checkEvenOrOdd(number) {
+  if (number % 2 === 0) {
+    return "Even";
+  } else {
+    return "Odd";
+  }
+}
+console.log(checkEvenOrOdd(4));
