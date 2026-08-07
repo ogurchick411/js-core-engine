@@ -526,7 +526,7 @@ function calculateAge(birthYear, currentYear) {
 console.log(calculateAge(2008, 2026));
 */
 
-
+/*
 function checkEvenOrOdd(number) {
   if (number % 2 === 0) {
     return "Even";
@@ -535,3 +535,22 @@ function checkEvenOrOdd(number) {
   }
 }
 console.log(checkEvenOrOdd(4));
+*/
+
+
+function isEven(number) {
+  return number % 2 === 0;
+}
+
+function checkNumberMessage(number) {
+  const isNumberEven = isEven(number);
+
+  if (isNumberEven) {
+    return "Num is Even"
+  } else {
+    return "Num is Odd"
+  }
+}
+
+console.log(checkNumberMessage(4));
+console.log(checkNumberMessage(7));
