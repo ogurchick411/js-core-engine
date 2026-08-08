@@ -590,7 +590,7 @@ console.log(users[1].name);
 */
 
 
-
+/*
 
 const users = [
   { name: "Alex", age: 19 },
@@ -609,6 +609,27 @@ function getAdultUser(list) {
 };
 
 getAdultUser(users);
- 
+*/
 
+
+
+
+
+const users = [
+
+  { name : "Roman", age: 17 },
+  { name: "Linda", age: 35}, 
+  { name: "Alex", age: 23}
+];
+
+function findAlex(list){
+  for (let i = 0; i < list.length; i++) {
+    if (list[i].name === "Alex") {
+      return list[i].age;
+
+    }
+  }
+}
+
+console.log(findAlex(users));
  
