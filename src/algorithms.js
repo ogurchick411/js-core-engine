@@ -559,6 +559,7 @@ console.log(checkNumberMessage(7));
 
 
 
+/*
 
   const myProduct = {
   title: "Mouse",
@@ -577,3 +578,12 @@ function checkProductStatus(item) {
 };
 
 console.log(checkProductStatus(myProduct).title);
+*/
+
+
+const users = [
+  {name: "Alex", age: 19},
+  {name: "Sergey", age: 23}
+];
+
+console.log(users[1].name);
