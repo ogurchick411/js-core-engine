@@ -580,10 +580,35 @@ function checkProductStatus(item) {
 console.log(checkProductStatus(myProduct).title);
 */
 
-
+/*
 const users = [
   {name: "Alex", age: 19},
   {name: "Sergey", age: 23}
 ];
 
 console.log(users[1].name);
+*/
+
+
+
+
+const users = [
+  { name: "Alex", age: 19 },
+  { name: "Sergey", age: 23 },
+  { name: "Max", age: 17 }
+];
+
+function getAdultUser(list) {
+  for (let i = 0; i < list.length; i++) {
+    if (list[i].age >= 18)  {
+      console.log(list[i].age)
+    } else {
+      console.log("You are so small")
+    }
+  }
+};
+
+getAdultUser(users);
+ 
+
+ 
