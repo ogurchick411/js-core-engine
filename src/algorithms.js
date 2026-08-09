@@ -613,6 +613,7 @@ getAdultUser(users);
 
 
 
+/*
 
 
 const users = [
@@ -632,4 +633,17 @@ function findAlex(list){
 }
 
 console.log(findAlex(users));
+*/
+
+
+const user = [
+  { name: "Roman", age: 17 },
+  { name: "Linda", age: 35 }, 
+  { name: "Alex", age: 23 }
+];
+
+const foundUser = user.find(user => user.name === "Alex");
+
+console.log(foundUser);
+console.log(foundUser.age);
  
