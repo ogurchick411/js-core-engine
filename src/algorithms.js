@@ -635,7 +635,7 @@ function findAlex(list){
 console.log(findAlex(users));
 */
 
-
+/*
 const user = [
   { name: "Roman", age: 17 },
   { name: "Linda", age: 35 }, 
@@ -646,4 +646,20 @@ const foundUser = user.find(user => user.name === "Alex");
 
 console.log(foundUser);
 console.log(foundUser.age);
- 
+*/
+
+
+
+
+const users = [
+  { name: "Alex", age: 19, role: "admin"},
+  { name: "Linda", age: 35, role: "user"},
+  { name: "Max", age: 16, role: "user"},
+  { name: "Roman", age: 22, role: "user"}
+];
+
+const adults = users
+.filter(user => user.age >= 18)
+.map(user => `${user.name} - ${user.age} age`);
+
+console.log(adults);
