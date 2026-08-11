@@ -719,7 +719,7 @@ console.log(filteredPrices);
 */
 
 
-
+/*
 const pricesInUSD = [10, 25, 100, 5];
 
 const pricesInGRN = [];
@@ -730,4 +730,9 @@ for (let i = 0; i < pricesInUSD.length; i++) {
 }
 
 console.log(pricesInGRN);
+*/
 
+
+const pricesInUSD = [10, 25, 100, 5];
+const pricesInGRN = pricesInUSD.map(price => price * 50);
+console.log(pricesInGRN);
