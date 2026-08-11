@@ -689,7 +689,7 @@ console.log(totalPrice);
 */
 
 
-
+/*
 
 const prices = [100, 250, 400, 50];
   let sum = 0;
@@ -700,4 +700,17 @@ const prices = [100, 250, 400, 50];
 
   console.log(sum);
 
+*/
 
+const prices = [200, 150, 40, 300, 120, 570];
+const filteredPrices = [];
+
+
+for (let i = 0; i < prices.length; i++) {
+
+  if (prices[i] >= 100) {
+    filteredPrices.push(prices[i]);
+  }
+}
+
+console.log(filteredPrices);
