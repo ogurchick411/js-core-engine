@@ -650,7 +650,7 @@ console.log(foundUser.age);
 
 
 
-
+/*
 const users = [
   { name: "Alex", age: 19, role: "admin"},
   { name: "Linda", age: 35, role: "user"},
@@ -663,3 +663,26 @@ const adults = users
 .map(user => `${user.name} - ${user.age} age`);
 
 console.log(adults);
+*/
+
+
+
+const cart = [
+  { id: 1, name: "Laptop", price: 1200, category: "electronics", inStock: true},
+  { id: 2, name: "Phone", price: 800, category: "electronics", inStock: false },
+  { id: 3, name: "Sneakers", price: 120, category: "shoes", inStock: true },
+  { id: 4, name: "T-Shirt", price: 30, category: "clothing", inStock: true },
+  { id: 5, name: "Headphones", price: 150, category: "electronics", inStock: true}
+];
+
+const stock = cart
+.filter(stockDescriptions => stockDescriptions.inStock)
+.map(stockDescriptions => `${stockDescriptions.name} - ${stockDescriptions.price}$`);
+
+
+const totalPrice = cart
+.reduce((sum, item) => sum + item.price, 0);
+
+
+console.log("Goods in Stock:", stock);
+console.log(totalPrice);
