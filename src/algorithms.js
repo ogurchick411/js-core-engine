@@ -666,7 +666,7 @@ console.log(adults);
 */
 
 
-
+/*
 const cart = [
   { id: 1, name: "Laptop", price: 1200, category: "electronics", inStock: true},
   { id: 2, name: "Phone", price: 800, category: "electronics", inStock: false },
@@ -686,3 +686,18 @@ const totalPrice = cart
 
 console.log("Goods in Stock:", stock);
 console.log(totalPrice);
+*/
+
+
+
+
+const prices = [100, 250, 400, 50];
+  let sum = 0;
+
+  for (let i = 0; i < prices.length; i++) {
+    sum = sum + prices[i];
+  }
+
+  console.log(sum);
+
+
