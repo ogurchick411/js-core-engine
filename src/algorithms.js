@@ -702,6 +702,8 @@ const prices = [100, 250, 400, 50];
 
 */
 
+
+/*
 const prices = [200, 150, 40, 300, 120, 570];
 const filteredPrices = [];
 
@@ -714,3 +716,18 @@ for (let i = 0; i < prices.length; i++) {
 }
 
 console.log(filteredPrices);
+*/
+
+
+
+const pricesInUSD = [10, 25, 100, 5];
+
+const pricesInGRN = [];
+
+for (let i = 0; i < pricesInUSD.length; i++) {
+  const c = pricesInUSD[i] * 50;
+  pricesInGRN.push(c);
+}
+
+console.log(pricesInGRN);
+
