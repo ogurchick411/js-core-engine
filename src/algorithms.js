@@ -732,7 +732,77 @@ for (let i = 0; i < pricesInUSD.length; i++) {
 console.log(pricesInGRN);
 */
 
-
+/*
 const pricesInUSD = [10, 25, 100, 5];
 const pricesInGRN = pricesInUSD.map(price => price * 50);
 console.log(pricesInGRN);
+*/
+
+
+
+
+const orders = [
+  {
+    orderId: 101,
+    customer: { name: "Alice", vip: true },
+    items: [
+      { name: "Burger", price: 12, category: "fastfood"},
+      { name: "Cola", price: 3, category: "drinks" }
+    ], 
+    status: "delivered"
+  },
+  {
+    orderId: 102,
+    customer: { name: "Bob", vip: false },
+    items: [
+      { name: "Pizza", price: 18, category: "italian" },
+      { name: "Beer", price: 5, category: "drinks" }
+    ],
+    status: "cancelled"
+  },
+  {
+    orderId: 103,
+    customer: { name: "Charlie", vip: true },
+    items: [
+      { name: "Sushi Set", price: 35, category: "asian" },
+      { name: "Green Tea", price: 4, category: "drinks" },
+      { name: "Mochi", price: 6, category: "asian" }
+    ],
+    status: "delivered"
+  },
+  {
+    orderId: 104,
+    customer: { name: "Diana", vip: false },
+    items: [
+      { name: "Pasta", price: 14, category: "italian" }
+    ],
+    status: "delivered"
+  }
+];
+
+
+const deliveredOrders = orders.filter(order => order.status === "delivered");
+const nameClients = orders.map(doneOrders => `${doneOrders.customer.name} - ${doneOrders.items.price}$`);
+
+const clientReceipts = deliveredOrders.map(order => {
+
+  const orderTotal = order.items.reduce((sum, item) => sum + item.price, 0);
+
+  return `${order.customer.name}: $${orderTotal}`;
+
+});
+
+
+const totalVipPrice = orders
+.filter(order => order.status === "delivered" && order.customer.vip === true)
+  .reduce((totalSum, order) => {
+   const orderSum = order.items.reduce((sum, item) => sum + item.price, 0);
+
+   return totalSum + orderSum;
+  }, 0);
+
+console.log("Customer bills:", clientReceipts);
+
+console.log("Revenue from VIP clients:", totalVipPrice);
+
+
