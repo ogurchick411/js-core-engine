@@ -883,7 +883,13 @@ console.log(hasHonorStudent);
 */
 
 
+/* .every() проверка "aбсолютно все"
+
+похож на .some() но пизже. метод вернет true только если абсолютно каждый элемент массива удовлетворяет условию. если хоть один сломает правило и вернет false
+
 const ages = [20, 25, 18, 30];
 
 const allAdults = ages.every(age => age >= 18);
 console.log(allAdults);
+*/
+
