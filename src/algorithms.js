@@ -845,6 +845,10 @@ console.log(sum);
 */
 
 
+/* .find() поиск первого совпадения
+
+ищет самый первый элемент который подходит под условие и сразу возвращает его
+
 const users = [
   { id: 1, name: "Alice" },
   { id: 2, name: "Bob" },
@@ -853,6 +857,6 @@ const users = [
 
 const foundUser = users.find(user => user.id === 2);
 console.log(foundUser);
-
+*/
 
 
