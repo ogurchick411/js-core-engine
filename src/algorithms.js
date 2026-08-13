@@ -894,7 +894,12 @@ console.log(allAdults);
 */
 
 
+/* .includes() простая проверка на наличие
+
+этот метод вызывается прямо у массива (без колбэкфункций со стрелочками) и проверяет есть ли конкретное примитивное значение внутри. возвращает true или false
+
 const colors = ["red", "green", "blue"];
 
 console.log(colors.includes("green"));
 console.lg(colors.includes("yellow"));
+*/
