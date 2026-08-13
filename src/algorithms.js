@@ -812,7 +812,10 @@ console.log("Revenue from VIP clients:", totalVipPrice);
 
 
 
-/*
+/* //.map() меняет каждый элемент
+
+//берем массив => трансформируем каждый элемент => получаем новый массив той же длины
+
 const numbers = [3, 4, 5, 2, 5];
 
 const doubled = numbers.map(num => num * 2);
@@ -828,7 +831,12 @@ console.log(bigNumbers);
 */
 
 
+/*
 const numbers = [1, 2, 3, 4];
 const sum = numbers.reduce((accumulator, current) => accumulator + current, 0);
 
 console.log(sum);
+*/
+
+
+
