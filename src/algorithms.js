@@ -872,10 +872,12 @@ console.log(index);
 
 
 
+/* some() проверка "хоть что то"
 
+бежит по массиву и проверяет условие. если хотя бы один элемент подошел под условие, метод возвращает true. если вообще ни один не подошел то false
 
 const scores = [45, 60, 30, 85];
 
 const hasHonorStudent = scores.some(score => score > 90);
 console.log(hasHonorStudent);
-
+*/
