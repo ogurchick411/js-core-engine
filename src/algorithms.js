@@ -870,3 +870,12 @@ const index = fruits.findIndex(fruit => fruit === "mango");
 console.log(index);
 */
 
+
+
+
+
+const scores = [45, 60, 30, 85];
+
+const hasHonorStudent = scores.some(score => score > 90);
+console.log(hasHonorStudent);
+
