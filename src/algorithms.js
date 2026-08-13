@@ -741,6 +741,9 @@ console.log(pricesInGRN);
 
 
 
+
+/*
+
 const orders = [
   {
     orderId: 101,
@@ -804,5 +807,13 @@ const totalVipPrice = orders
 console.log("Customer bills:", clientReceipts);
 
 console.log("Revenue from VIP clients:", totalVipPrice);
+*/
 
 
+
+
+
+const numbers = [3, 4, 5, 2, 5];
+
+const doubled = numbers.map(num => num * 2);
+console.log(doubled);
