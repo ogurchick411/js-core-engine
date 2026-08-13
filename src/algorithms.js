@@ -812,8 +812,17 @@ console.log("Revenue from VIP clients:", totalVipPrice);
 
 
 
-
+/*
 const numbers = [3, 4, 5, 2, 5];
 
 const doubled = numbers.map(num => num * 2);
 console.log(doubled);
+*/
+
+
+
+const numbers = [10, 5, 20, 3];
+const bigNumbers = numbers.filter(num => num > 10);
+
+console.log(bigNumbers);
+
