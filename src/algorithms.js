@@ -881,3 +881,9 @@ const scores = [45, 60, 30, 85];
 const hasHonorStudent = scores.some(score => score > 90);
 console.log(hasHonorStudent);
 */
+
+
+const ages = [20, 25, 18, 30];
+
+const allAdults = ages.every(age => age >= 18);
+console.log(allAdults);
