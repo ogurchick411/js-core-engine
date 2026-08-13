@@ -893,3 +893,8 @@ const allAdults = ages.every(age => age >= 18);
 console.log(allAdults);
 */
 
+
+const colors = ["red", "green", "blue"];
+
+console.log(colors.includes("green"));
+console.lg(colors.includes("yellow"));
