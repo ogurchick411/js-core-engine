@@ -860,3 +860,10 @@ console.log(foundUser);
 */
 
 
+
+const fruits = ["apple", "banana", "mango", "orange"];
+
+const index = fruits.findIndex(fruit => fruit === "mango");
+console.log(index);
+
+
