@@ -834,7 +834,10 @@ console.log(bigNumbers);
 */
 
 
-/*
+/* .reduce() собирает все в одно целое
+
+// берем массив => накапливаем результат в переменную (accumulator) => получаем одно число/объект
+
 const numbers = [1, 2, 3, 4];
 const sum = numbers.reduce((accumulator, current) => accumulator + current, 0);
 
