@@ -860,10 +860,13 @@ console.log(foundUser);
 */
 
 
+/* .findIndex() индекс найденного элемента
+
+работает 1:1 как .find() но возвращает не сам элемент а его порядковый номер "индекс" в массиве. если ничего не нашлось то вернет -1
 
 const fruits = ["apple", "banana", "mango", "orange"];
 
 const index = fruits.findIndex(fruit => fruit === "mango");
 console.log(index);
-
+*/
 
