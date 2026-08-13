@@ -820,9 +820,15 @@ console.log(doubled);
 */
 
 
-
+/*
 const numbers = [10, 5, 20, 3];
 const bigNumbers = numbers.filter(num => num > 10);
 
 console.log(bigNumbers);
+*/
 
+
+const numbers = [1, 2, 3, 4];
+const sum = numbers.reduce((accumulator, current) => accumulator + current, 0);
+
+console.log(sum);
