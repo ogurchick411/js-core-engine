@@ -903,3 +903,16 @@ const colors = ["red", "green", "blue"];
 console.log(colors.includes("green"));
 console.lg(colors.includes("yellow"));
 */
+
+
+
+
+
+const users = [
+  { id: 1, name: "Alice", isActive: true },
+  { id: 2, name: "Bob", isActive: false },
+  { id: 3, name: "Charlie", isActive: true }
+];
+
+const activeUsers = users.filter(u => u.isActive);
+console.log(activeUsers);
