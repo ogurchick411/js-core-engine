@@ -919,7 +919,7 @@ console.log(activeUsers);
 */
 
 
-
+/*
 const products = [
   { title: "Phone", category: "electronics", price: 500 },
   { title: "Shirt", category: "clothes", price: 30 },
@@ -928,4 +928,14 @@ const products = [
 
 const electronics = products.filter(p => p.category === "electronics");
 console.log(electronics);
+*/
+
+
+const items = [
+  { name: "Pen", price: 5 },
+  { name: "Book", price: 45 },
+  { name: "Bag", price: 120 },
+];
+const cheapItems = items.filter(item => item.price < 100);
+console.log(cheapItems);
 
