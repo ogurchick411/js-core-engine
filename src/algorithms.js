@@ -928,3 +928,4 @@ const products = [
 
 const electronics = products.filter(p => p.category === "electronics");
 console.log(electronics);
+
