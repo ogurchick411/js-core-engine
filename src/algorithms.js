@@ -941,7 +941,7 @@ console.log(cheapItems);
 */
 
 
-
+/*
 const students = [
   { name: "Max", age: 16 },
   { name: "Anna", age: 20 },
@@ -951,3 +951,17 @@ const students = [
 
 const adults = students.filter(s => s.age >= 18);
 console.log(adults);
+*/
+
+
+const orders = [
+  { id: 1, status: "success" },
+  { id: 2, status: "pending" },
+  { id: 3, status: "success" }
+];
+
+const translated = orders.map(order => ({
+  ...order,
+  statusRu: order.status === "success" ? "успешно" : "в обработке"
+}));
+console.log(translated);
