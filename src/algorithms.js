@@ -930,7 +930,7 @@ const electronics = products.filter(p => p.category === "electronics");
 console.log(electronics);
 */
 
-
+/*
 const items = [
   { name: "Pen", price: 5 },
   { name: "Book", price: 45 },
@@ -938,4 +938,16 @@ const items = [
 ];
 const cheapItems = items.filter(item => item.price < 100);
 console.log(cheapItems);
+*/
 
+
+
+const students = [
+  { name: "Max", age: 16 },
+  { name: "Anna", age: 20 },
+  { name: "Lera", age: 17 },
+  { name: "Olena", age: 22 }
+];
+
+const adults = students.filter(s => s.age >= 18);
+console.log(adults);
