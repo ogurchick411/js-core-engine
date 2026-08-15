@@ -906,7 +906,7 @@ console.lg(colors.includes("yellow"));
 
 
 
-
+/*
 
 const users = [
   { id: 1, name: "Alice", isActive: true },
@@ -916,3 +916,15 @@ const users = [
 
 const activeUsers = users.filter(u => u.isActive);
 console.log(activeUsers);
+*/
+
+
+
+const products = [
+  { title: "Phone", category: "electronics", price: 500 },
+  { title: "Shirt", category: "clothes", price: 30 },
+  { title: "Laptop", category: "electronics", price: 1200 }
+];
+
+const electronics = products.filter(p => p.category === "electronics");
+console.log(electronics);
