@@ -967,7 +967,7 @@ const translated = orders.map(order => ({
 console.log(translated);
 */
 
-
+/*
 let a = 10;
 let b = a;
 b = 20;
@@ -978,3 +978,21 @@ const user2 = user1;
 user2.name = "Bob";
 
 console.log(user1.name);
+*/
+
+
+
+function createCounter() {
+  let count = 0;
+
+  return function() {
+    count ++;
+    return count;
+  };
+}
+
+const counter = createCounter();
+console.log(counter());
+console.log(counter());
+console.log(counter());
+
