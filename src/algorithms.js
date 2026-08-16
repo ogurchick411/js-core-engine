@@ -953,7 +953,7 @@ const adults = students.filter(s => s.age >= 18);
 console.log(adults);
 */
 
-
+/*
 const orders = [
   { id: 1, status: "success" },
   { id: 2, status: "pending" },
@@ -965,3 +965,16 @@ const translated = orders.map(order => ({
   statusRu: order.status === "success" ? "успешно" : "в обработке"
 }));
 console.log(translated);
+*/
+
+
+let a = 10;
+let b = a;
+b = 20;
+console.log(a);
+
+const user1 = { name: "Alice" };
+const user2 = user1;
+user2.name = "Bob";
+
+console.log(user1.name);
