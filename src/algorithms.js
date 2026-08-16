@@ -981,7 +981,7 @@ console.log(user1.name);
 */
 
 
-
+/*
 function createCounter() {
   let count = 0;
 
@@ -995,4 +995,20 @@ const counter = createCounter();
 console.log(counter());
 console.log(counter());
 console.log(counter());
+*/
 
+
+
+
+const rawUsers = [
+  { id: 1, name: "Ivan", age: 22, isActive: true },
+  { id: 2, name: "Anna", age: 16, isActive: true },
+  { id: 3, name: "Piter", age: 30, isActive: false },
+  { id: 4, name: "Olena", age: 25, isActive: true }
+];
+
+const validUsers = rawUsers.filter(user => user.isActive === true && user.age >= 18);
+
+const userCards = validUsers.map(user => `Name: ${user.name}, Age: ${user.age}`);
+
+console.log("Result for Screen:", userCards);
