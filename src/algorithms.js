@@ -1032,7 +1032,7 @@ console.log(orderTotals);
 */
 
 
-
+/*
 const orders = [
   { id: 101, total: 15000, status: "delivered" },
   { id: 102, total: 400, status: "pending" },
@@ -1045,3 +1045,20 @@ const deliveredTotals = orders
   .map(order => order.total);
 
 console.log(deliveredTotals);
+*/
+
+
+
+const orders = [
+  { id: 101, total: 15000, status: "delivered" },
+  { id: 102, total: 400, status: "pending" },
+  { id: 103, total: 2300, status: "delivered" },
+  { id: 104, total: 900, status: "cancelled" }
+];
+
+const totalDeliveredRevenue = orders
+  .filter(order => order.status === "delivered")
+  .map(order => order.total)
+  .reduce((sum, current) => sum + current, 0);
+
+  console.log("Total Revenue:", totalDeliveredRevenue);
