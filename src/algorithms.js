@@ -998,7 +998,7 @@ console.log(counter());
 */
 
 
-
+/*
 
 const rawUsers = [
   { id: 1, name: "Ivan", age: 22, isActive: true },
@@ -1012,3 +1012,20 @@ const validUsers = rawUsers.filter(user => user.isActive === true && user.age >=
 const userCards = validUsers.map(user => `Name: ${user.name}, Age: ${user.age}`);
 
 console.log("Result for Screen:", userCards);
+*/
+
+
+
+
+const orders = [
+  { id: 101, total: 15000, status: "delivered" },
+  { id: 102, total: 400, status: "pending" },
+  { id: 103, total: 2300, status: "delivered" },
+  { id: 104, total: 900, status: "cancelled" }
+];
+
+const deliveredOrders = orders.filter(order => order.status === "delivered");
+
+const orderTotals = deliveredOrders.map(order => `Status: ${order.status}, Total:${order.total}`);
+
+console.log(orderTotals);
