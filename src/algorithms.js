@@ -1016,7 +1016,7 @@ console.log("Result for Screen:", userCards);
 
 
 
-
+/*
 const orders = [
   { id: 101, total: 15000, status: "delivered" },
   { id: 102, total: 400, status: "pending" },
@@ -1029,3 +1029,19 @@ const deliveredOrders = orders.filter(order => order.status === "delivered");
 const orderTotals = deliveredOrders.map(order => `Status: ${order.status}, Total:${order.total}`);
 
 console.log(orderTotals);
+*/
+
+
+
+const orders = [
+  { id: 101, total: 15000, status: "delivered" },
+  { id: 102, total: 400, status: "pending" },
+  { id: 103, total: 2300, status: "delivered" },
+  { id: 104, total: 900, status: "cancelled" },
+];
+
+const deliveredTotals = orders
+  .filter(order => order.status === "delivered")
+  .map(order => order.total);
+
+console.log(deliveredTotals);
