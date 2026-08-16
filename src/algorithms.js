@@ -1048,7 +1048,7 @@ console.log(deliveredTotals);
 */
 
 
-
+/*
 const orders = [
   { id: 101, total: 15000, status: "delivered" },
   { id: 102, total: 400, status: "pending" },
@@ -1062,3 +1062,17 @@ const totalDeliveredRevenue = orders
   .reduce((sum, current) => sum + current, 0);
 
   console.log("Total Revenue:", totalDeliveredRevenue);
+  */
+
+
+
+const orders = [
+  { id: 101, total: 15000, status: "delivered" },
+  { id: 102, total: 400, status: "pending" },
+  { id: 103, total: 2300, status: "delivered" },
+  { id: 104, total: 900, status: "cancelled" }
+];
+
+const targetOrder = orders.find(order => order.id === 103);
+
+console.log("Target Order:", targetOrder);
