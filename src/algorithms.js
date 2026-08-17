@@ -1140,6 +1140,7 @@ console.log(myWallet.balance);
 */
 
 
+/*
 
 
 const user = {
@@ -1155,3 +1156,22 @@ const user = {
 
 user.sayHi();       
 user.sayHiArrow();
+*/
+
+
+
+
+function downloadData(callback) {
+  console.log("Download data from server....");
+
+  setTimeout(() => {
+    const data = { id: 42, title: "Super Article" };
+    console.log("Data successfully download");
+
+    callback(data);
+  }, 2000);
+}
+
+downloadData(function(result) {
+  console.log("We process the received data:", result);
+});
