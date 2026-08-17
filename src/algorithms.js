@@ -1092,7 +1092,7 @@ const hasCancelledOrders = orders.some(order => order.status === "cancelled");
 console.log("Has Cancelled Orders:", hasCancelledOrders);
 */
 
-
+/*
 const orders = [
   { id: 101, total: 15000, status: "delivered" },
   { id: 102, total: 400, status: "pending" },
@@ -1103,3 +1103,37 @@ const orders = [
 const allValidTotals = orders.every(order => order.total > 0);
 
 console.log("Do all orders have a valid amount:", allValidTotals);
+*/
+
+
+
+
+function createWallet(initialBalance) {
+  let balance = initialBalance;
+
+  return {
+    deposit: function(amount) {
+      balance += amount;
+      return balance;
+    },
+    withdraw: function(amount) {
+      if (amount > balance) {
+        return "Not enough funds";
+      }
+      balance -= amount;
+      return balance;
+    },
+    getBalance: function() {
+      return balance;
+    }
+  };
+}
+
+
+const myWallet = createWallet(1000);
+
+console.log(myWallet.getBalance());
+console.log(myWallet.deposit(500));
+console.log(myWallet.withdraw(200));
+console.log(myWallet.balance);
+
