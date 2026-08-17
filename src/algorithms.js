@@ -1105,7 +1105,7 @@ const allValidTotals = orders.every(order => order.total > 0);
 console.log("Do all orders have a valid amount:", allValidTotals);
 */
 
-
+/*
 
 
 function createWallet(initialBalance) {
@@ -1137,3 +1137,21 @@ console.log(myWallet.deposit(500));
 console.log(myWallet.withdraw(200));
 console.log(myWallet.balance);
 
+*/
+
+
+
+
+const user = {
+  name: "Alex",
+    sayHi: function() {
+    console.log(`Hi, my name is ${this.name}`);
+  },
+
+  sayHiArrow: () => {
+    console.log(`Hi, my name is ${this.name}`);
+  }
+};
+
+user.sayHi();       
+user.sayHiArrow();
