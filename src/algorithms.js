@@ -1203,7 +1203,7 @@ console.log("The customer continued to choose drinks in the app...");
 
 
 
-
+/*
 const fetchUserData = new Promise((resolve, reject) => {
   console.log("Loading user Data from the server...");
 
@@ -1227,3 +1227,28 @@ fetchUserData
   });
 
   console.log("The program moves on without waiting for a response from the promise...")
+*/
+
+
+
+
+function fetchOrders() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(["Order 1", "Order 2", "Order 3"]);
+
+    }, 1500);
+  })
+}
+
+async function showOrders() {
+  console.log("Loading was Started...");
+
+  const orders = await fetchOrders();
+
+  console.log("Orders received:", orders);
+
+}
+
+showOrders();
+console.log("This code will be executed first while the showOrders function is waiting for data");
