@@ -1179,6 +1179,7 @@ downloadData(function(result) {
 
 
 
+/*
 
 function cookBurger(burgerName, onReadyCallback) {
   console.log(`Lets start cooking the Burger: "${burgerName}"...`);
@@ -1198,4 +1199,31 @@ cookBurger("Double Cheeseburger", function(burgerData) {
 });
 
 console.log("The customer continued to choose drinks in the app...");
+*/
 
+
+
+
+const fetchUserData = new Promise((resolve, reject) => {
+  console.log("Loading user Data from the server...");
+
+  setTimeout(() => {
+    const succes = true;
+
+    if (succes) {
+      resolve({ id: 1, name: "Alex", role: "Developer"});
+    } else {
+      reject("Server connection Error");
+    }
+  }, 2000);
+});
+
+fetchUserData
+  .then((user) => {
+    console.log("Succes! Data received:", user);
+  })
+  .catch((error) => {
+    console.log("Error caught:", error);
+  });
+
+  console.log("The program moves on without waiting for a response from the promise...")
