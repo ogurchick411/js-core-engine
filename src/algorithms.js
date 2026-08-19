@@ -1159,7 +1159,7 @@ user.sayHiArrow();
 */
 
 
-
+/*
 
 function downloadData(callback) {
   console.log("Download data from server....");
@@ -1175,3 +1175,27 @@ function downloadData(callback) {
 downloadData(function(result) {
   console.log("We process the received data:", result);
 });
+*/
+
+
+
+
+function cookBurger(burgerName, onReadyCallback) {
+  console.log(`Lets start cooking the Burger: "${burgerName}"...`);
+
+  setTimeout(() => {
+    const finishedBurger = { name: burgerName, status: "Done", id: 777 };
+
+    console.log(`Burger "${burgerName}" done!`);
+
+    onReadyCallback(finishedBurger);
+
+  }, 2000);
+}
+
+cookBurger("Double Cheeseburger", function(burgerData) {
+  console.log("The courier has picked up the order! Details from the kitchen:", burgerData);
+});
+
+console.log("The customer continued to choose drinks in the app...");
+
