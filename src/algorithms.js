@@ -1256,6 +1256,7 @@ console.log("This code will be executed first while the showOrders function is w
 
 
 
+/*
 
 function getUserName() {
   return new Promise((resolve) => {
@@ -1274,3 +1275,37 @@ async function showUserProfile() {
 }
 
 showUserProfile();
+*/
+
+
+
+function searchProduct(query) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      console.log(`Item "${query}" founded`);
+      resolve({ id: 10, title: "Mexanical Keyboard"});
+    }, 1000);
+  });
+}
+
+function fetchPrice(productId) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      console.log(`Getting the price for a product with ID: ${productId}...`);
+      resolve(120);
+    }, 1500);
+  });
+}
+
+async function processOrder() {
+  console.log("Starting order processing...");
+
+  const product = await searchProduct("Keyboard");
+
+  const price = await fetchPrice(product.id);
+
+  console.log(`Result: You buy "${product.title}" for $${price}!`)
+}
+
+processOrder();
+console.log("This text will be printed IMMEDIATELY because processOrder has paused in await");
