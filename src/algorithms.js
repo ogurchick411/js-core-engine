@@ -1231,7 +1231,7 @@ fetchUserData
 
 
 
-
+/*
 function fetchOrders() {
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -1252,3 +1252,25 @@ async function showOrders() {
 
 showOrders();
 console.log("This code will be executed first while the showOrders function is waiting for data");
+*/
+
+
+
+
+function getUserName() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("Alex_Dev");
+    }, 1000);
+  });
+}
+
+async function showUserProfile() {
+  console.log("Profile Loading...");
+
+  const user = await getUserName();
+
+  console.log("User succes load:", user);
+}
+
+showUserProfile();
