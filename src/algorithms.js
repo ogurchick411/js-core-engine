@@ -1312,7 +1312,7 @@ console.log("This text will be printed IMMEDIATELY because processOrder has paus
 
 */
 
-
+/*
 function fetchWeatherData() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -1342,3 +1342,32 @@ async function showWeather() {
 
 showWeather();
 
+*/
+
+
+function loginUser(username, password) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (username === "admin" && password === "101129") {
+        resolve({ token: "C.h0TG/_=U&$=w9", role: "admin" });
+      } else {
+        reject("Incorrect login or password");
+      }
+    }, 1000);
+  });
+}
+
+
+async function handleLogin(userLogin, userPassword) {
+  console.log(`Trying to log in as "${userLogin}"...`);
+
+  try {
+    const response = await loginUser(userLogin, userPassword);
+    console.log("Successful login! Access token: ", response.token);
+  } catch (error) {
+    console.log("Login error:", error);
+  }
+}
+
+handleLogin("admin", "101129");
+// handleLogin("user", "wrong_password");
