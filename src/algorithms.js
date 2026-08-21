@@ -1278,7 +1278,7 @@ showUserProfile();
 */
 
 
-
+/*
 function searchProduct(query) {
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -1309,3 +1309,36 @@ async function processOrder() {
 
 processOrder();
 console.log("This text will be printed IMMEDIATELY because processOrder has paused in await");
+
+*/
+
+
+function fetchWeatherData() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const isServerWorking = true;
+
+      if (isServerWorking) {
+        resolve({ temp: 22, city: "Berlin"});
+      } else {
+        reject(" Server error: Failed to get weather!");
+      }
+    }, 1200);
+  });
+}
+
+async function showWeather() {
+  console.log("Requesting the weather...");
+
+  try {
+    const weather = await fetchWeatherData();
+    console.log(`Weather in city ${weather.city}: ${weather.temp}°C`);
+  } catch (error) {
+    console.log("Error caught:", error);
+  } finally {
+    console.log("Weather request completed (successfully or with an error)");
+  }
+}
+
+showWeather();
+
